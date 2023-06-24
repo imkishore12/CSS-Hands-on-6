@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(242, 242, 69);
+}
+
+.parent {
+    display: grid;
+    justify-content: center;
+
+}
+
+.number {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.box {
+    display: flex;
+    margin-top: 2em;
+    gap: 5px;
+}
+
+.child {
+    background-color: rgb(62, 209, 62);
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    Transition: width;
+}
+
+.child:hover {
+    width: 350px;
+}
+
+
+.child1 {
+    transition: width 2s;
+    transform-origin: center;
+    transition-timing-function: ease;
+}
+
+.child2 {
+    transform-origin: center;
+    transition: width 2s, height 2s;
+    transition-timing-function: linear;
+
+
+}
+
+.child2:hover {
+    width: 350px;
+    height: 350px;
+}
+
+.child3 {
+
+    transition: width 2s;
+    transform-origin: center;
+    transition-timing-function: ease-in;
+
+}
+
+.child4 {
+    transition: width 2s;
+    transform-origin: center;
+    transition-timing-function: ease-in-out;
+}
+
+
+.child5 {
+    transition-timing-function: ease-out;
+    transition: width 2s;
+    transform-origin: center;
+}
+
+
+.child6 {
+    transition-timing-function: step-end;
+    transition: width 2s;
+    transform-origin: center;
+}
+
+.child7 {
+    transition-timing-function: step-start;
+    transition: width 2s;
+    transform-origin: center;
+}
+
+.back {
+    color: rgb(20, 20, 180);
+
+    text-decoration: underline;
+    margin: 15px;
+}
+
+.next {
+    color: rgb(70, 70, 162);
+
+    text-decoration: underline;
+    margin: 15px;
+}

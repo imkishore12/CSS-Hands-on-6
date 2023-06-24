@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(242, 242, 69);
+}
+.container{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    
+    
+}
+.parent{
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    
+
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    
+
+}
+.child1 {
+    animation-name: crossanimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color:rgb(86, 144, 146);
+
+}
+
+.child2 {
+    animation: alternate-reverse;
+    animation-name: crossanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-color: rgb(231, 171, 181);
+}
+
+.child3 {
+    animation-name: Rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color:rgb(70, 128, 131);
+}
+
+.child4color1 {
+    animation: scaleYAnimation infinite 3s ease;
+    background-color:rgb(59, 158, 163);
+    border: 3px solid rgb(52, 113, 116);;
+}
+ 
+.child4color2 {
+    animation: scaleXAnimation infinite 3s ease;
+    background-color: rgb(243, 56, 56);
+    border:3px solid rgb(146, 13, 13);
+}
+.child4color3 {
+    animation: ScaleYAnimation infinite 3s ease;
+    background-color:rgb(90, 210, 90);
+    border: 3px solid rgb(79, 187, 79);
+}
+@keyframes crossanimation {
+    0% {
+        transform: skew(-20deg);
+    }
+
+    50% {
+        transform: skew(20deg);
+    }
+
+    100% {
+        transform: skew(-20deg);
+    }
+}
+
+@keyframes Rotation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleYAnimation {
+    0% {
+        transform: scaley(0.5);
+    }
+
+    50% {
+        transform: scaley(1);
+    }
+
+    100% {
+        transform: scaley(0.5);
+    }
+}
+
+@keyframes scaleXAnimation {
+    0% {
+        transform: scalex(0.5);
+    }
+
+    50% {
+        transform: scalex(1);
+    }
+
+    100% {
+        transform: scalex(0.5);
+    }
+}
+h1{
+    text-align: center;
+}
+a{
+    color: rgb(11, 11, 123);
+    font-weight: 100;
+    text-decoration: underline;
+}
